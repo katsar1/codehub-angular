@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 padding" *ngFor="let country of countries" class="card" style="width: 18rem;">
+            <img [src]="country.flag" class="card-img-top" [alt]="country.flag">
+            <div class="card-body">
+                <h5 class="card-title">{{country.name}}</h5>
+                <p class="card-text">
+                    <span>Capital: {{country.capital}}</span> <br />
+                    <span>Region: {{country.region}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
